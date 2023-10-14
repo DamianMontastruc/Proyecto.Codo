@@ -1,0 +1,248 @@
+html{
+    height: fit-content;
+    background:linear-gradient(to right, black ,#000046);
+    }
+
+
+a.boton-1{
+    content: "";
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    box-shadow:0 0 15px #00007a;
+    border: none;
+    cursor: pointer;
+    display:inline-block;
+    text-align: center;
+    border: 2px solid #000046; /* Borde sólido con el color del fondo */
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px ;
+}
+
+a.boton-1:before{
+   content: "";
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(70deg, transparent, #000046, transparent);
+    background-size: 200% 200%;
+    animation: shine 27.3s linear infinite;
+}
+
+a.boton-1:hover:before {
+    box-shadow:20px 20px 40px #00007a;
+}
+
+a.boton-1:hover{
+    box-shadow:10px 10px 20px #004e9b;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+  /* Estilos generales */
+body {
+    
+    font-family: Arial, sans-serif;
+    background: transparent;
+    text-align: center;
+}
+
+.container {
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    margin: 0 auto;
+    padding: 20px;
+    background: transparent;
+    box-shadow: 0 10px 10px #00007a;
+    border-radius: 10px;
+}
+
+
+h1 {
+   
+    font-size: 2em;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    box-shadow:0 0 30px #00007a;
+    border: none;
+    border: 2px solid #000046; /* Borde sólido con el color del fondo */
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+ h1::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(70deg, transparent, #000046, transparent);
+    background-size: 200% 200%;
+    animation: shine 36.7s linear infinite;
+}
+
+
+/* Estilos para los botones de filtrado */
+.filtro {
+    padding: 5px 10px;
+    background: linear-gradient(to left, black, #000046);
+    color: white;
+    box-shadow: #00007a;
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+
+.filtro:hover {
+    box-shadow: 8px 8px 20px #004e9b;
+}
+
+
+/* Estilos para los productos */
+.producto {
+    width: auto;
+    height: auto;
+    color: white;
+    background: linear-gradient(to left, black, #000046);
+    padding: 10px;
+    border: 1px solid #000046;
+    box-shadow: 2px 2px 5px #00007a;
+    display:block;
+    transition: 0.3s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.producto:hover {
+    box-shadow: 4px 4px 10px #004e9b;
+}
+
+/* Otros estilos, como los botones de filtrado activos */
+.filtro.active {
+    background-color: #004e9b;
+}
+
+.container-catalogo{
+    box-sizing: border-box;
+    width: fit-content;
+    height: fit-content;
+    align-items: baseline;
+    color: white;
+    padding: 50px;
+    background: linear-gradient(to left, black, #000046);
+    box-shadow: 0 10px 10px #00007a;
+    border-radius: 10px;
+    animation: shine 36.7s linear infinite;
+}
+ 
+.container-productos{
+    align-items: center;
+    box-sizing: border-box;
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    margin: 0;
+    padding: 10px;
+    background: linear-gradient(to left, black, #000046);
+    box-shadow: 0 4px 10px #00007a;
+    border-radius: 10px;
+
+    
+}
+
+.container-general{
+    box-sizing: border-box;
+    width: fit-content;
+    float:left;
+    height: fit-content;
+    display:flex;
+    color: white;
+    margin: 0;
+    padding: 20px;
+    background: transparent;
+    border-radius: 10px;
+   
+}
+
+.boton-carrito{
+    content: "";
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    background: linear-gradient(to right, black,#000046);
+    color: white;
+    padding: 10px 20px;
+    box-shadow:2px 2px 6px #00007a;
+    border: none;
+    cursor: pointer;
+    display:inline-block;
+    text-align: center;
+    border: 2px solid #000046; /* Borde sólido con el color del fondo */
+    position: relative;
+    border-radius: 10px ;
+}
+.boton-carrito:hover {
+    box-shadow: 4px 4px 10px #004e9b;
+}
+.container-productos:hover {
+    box-shadow: 8px 8px 20px #004e9b;
+}
+
+.carrito{
+    color: white;
+}
+
+.boton-pag-carro{
+    padding: 5px 10px;
+    background: linear-gradient(to left, black, #000046);
+    color: white;
+    box-shadow: #00007a;
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+
+.boton-pag-carro:hover {
+    box-shadow: 8px 8px 20px #004e9b;
+}
+
+.lista-carrito{
+    color: white;
+    list-style: none;
+    font-size: larger;
+    font-style: italic;
+    padding: 10px;
+    justify-items: auto;
+}
+
+.imagen{
+    height: 150px;
+    width: 150px;
+}
